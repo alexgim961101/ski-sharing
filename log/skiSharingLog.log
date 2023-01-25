@@ -1,0 +1,74 @@
+WARN  23-01-26 00:55:24[HikariPool-1 housekeeper] [HikariPool:788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m42s24ms199µs399ns).
+INFO  23-01-26 00:58:59[restartedMain] [SharingApplication:55] - Starting SharingApplication using Java 11 on DESKTOP-OLLBE1M with PID 15164 (D:\spring\sharing\build\classes\java\main started by alexg in D:\spring\sharing)
+INFO  23-01-26 00:58:59[restartedMain] [SharingApplication:631] - No active profile set, falling back to 1 default profile: "default"
+INFO  23-01-26 00:58:59[background-preinit] [Version:21] - HV000001: Hibernate Validator 6.2.5.Final
+INFO  23-01-26 00:58:59[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  23-01-26 00:58:59[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  23-01-26 00:59:01[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  23-01-26 00:59:01[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interfaces.
+INFO  23-01-26 00:59:03[restartedMain] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-01-26 00:59:03[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-01-26 00:59:03[restartedMain] [StandardService:173] - Starting service [Tomcat]
+INFO  23-01-26 00:59:03[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.71]
+INFO  23-01-26 00:59:03[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-01-26 00:59:03[restartedMain] [ServletWebServerApplicationContext:292] - Root WebApplicationContext: initialization completed in 3427 ms
+INFO  23-01-26 00:59:03[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  23-01-26 00:59:03[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 5.6.14.Final
+INFO  23-01-26 00:59:04[restartedMain] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  23-01-26 00:59:04[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  23-01-26 00:59:04[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  23-01-26 00:59:04[restartedMain] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+INFO  23-01-26 00:59:05[restartedMain] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  23-01-26 00:59:05[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  23-01-26 00:59:06[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  23-01-26 00:59:06[restartedMain] [OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
+INFO  23-01-26 00:59:07[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-01-26 00:59:07[restartedMain] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-01-26 00:59:07[restartedMain] [SharingApplication:61] - Started SharingApplication in 8.728 seconds (JVM running for 9.517)
+INFO  23-01-26 01:01:05[http-nio-8080-exec-1] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-01-26 01:01:05[http-nio-8080-exec-1] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-01-26 01:01:05[http-nio-8080-exec-1] [DispatcherServlet:547] - Completed initialization in 2 ms
+INFO  23-01-26 01:01:05[http-nio-8080-exec-1] [UserController:45] - ------ signup API 실행 -------
+INFO  23-01-26 01:01:08[http-nio-8080-exec-3] [UserController:74] - ---- 특정 회원 조회 API 실행 ----
+INFO  23-01-26 01:01:08[http-nio-8080-exec-3] [UserServiceImpl:54] - --- readOne 메서드 작동 , userId : 1
+INFO  23-01-26 01:01:08[http-nio-8080-exec-3] [UserServiceImpl:60] - user 정보 : com.alexgim.sharing.user.data.entiry.User@22a57b30
+INFO  23-01-26 01:01:41[http-nio-8080-exec-5] [UserController:45] - ------ signup API 실행 -------
+INFO  23-01-26 01:01:54[http-nio-8080-exec-7] [UserController:74] - ---- 특정 회원 조회 API 실행 ----
+INFO  23-01-26 01:01:54[http-nio-8080-exec-7] [UserServiceImpl:54] - --- readOne 메서드 작동 , userId : 2
+INFO  23-01-26 01:01:54[http-nio-8080-exec-7] [UserServiceImpl:60] - user 정보 : com.alexgim.sharing.user.data.entiry.User@7916db18
+INFO  23-01-26 01:01:57[http-nio-8080-exec-8] [UserController:74] - ---- 특정 회원 조회 API 실행 ----
+INFO  23-01-26 01:01:57[http-nio-8080-exec-8] [UserServiceImpl:54] - --- readOne 메서드 작동 , userId : 0
+ERROR 23-01-26 01:01:57[http-nio-8080-exec-8] [UserServiceImpl:57] - No value present
+INFO  23-01-26 01:02:33[background-preinit] [Version:21] - HV000001: Hibernate Validator 6.2.5.Final
+INFO  23-01-26 01:02:33[restartedMain] [SharingApplication:55] - Starting SharingApplication using Java 11 on DESKTOP-OLLBE1M with PID 3860 (D:\spring\sharing\build\classes\java\main started by alexg in D:\spring\sharing)
+INFO  23-01-26 01:02:33[restartedMain] [SharingApplication:631] - No active profile set, falling back to 1 default profile: "default"
+INFO  23-01-26 01:02:33[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  23-01-26 01:02:33[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  23-01-26 01:02:34[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  23-01-26 01:02:34[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interfaces.
+INFO  23-01-26 01:02:36[restartedMain] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-01-26 01:02:36[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-01-26 01:02:36[restartedMain] [StandardService:173] - Starting service [Tomcat]
+INFO  23-01-26 01:02:36[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.71]
+INFO  23-01-26 01:02:36[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-01-26 01:02:36[restartedMain] [ServletWebServerApplicationContext:292] - Root WebApplicationContext: initialization completed in 3383 ms
+INFO  23-01-26 01:02:37[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  23-01-26 01:02:37[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 5.6.14.Final
+INFO  23-01-26 01:02:37[restartedMain] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  23-01-26 01:02:37[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  23-01-26 01:02:38[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  23-01-26 01:02:38[restartedMain] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+INFO  23-01-26 01:02:39[restartedMain] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  23-01-26 01:02:39[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  23-01-26 01:02:40[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  23-01-26 01:02:40[restartedMain] [OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
+INFO  23-01-26 01:02:40[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-01-26 01:02:40[restartedMain] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-01-26 01:02:41[restartedMain] [SharingApplication:61] - Started SharingApplication in 8.518 seconds (JVM running for 9.296)
+INFO  23-01-26 01:02:44[http-nio-8080-exec-2] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-01-26 01:02:44[http-nio-8080-exec-2] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-01-26 01:02:44[http-nio-8080-exec-2] [DispatcherServlet:547] - Completed initialization in 2 ms
+INFO  23-01-26 01:02:45[http-nio-8080-exec-2] [UserController:45] - ------ signup API 실행 -------
+INFO  23-01-26 01:02:48[http-nio-8080-exec-3] [UserController:74] - ---- 특정 회원 조회 API 실행 ----
+INFO  23-01-26 01:02:48[http-nio-8080-exec-3] [UserServiceImpl:54] - --- readOne 메서드 작동 , userId : 0
+ERROR 23-01-26 01:02:48[http-nio-8080-exec-3] [UserServiceImpl:57] - No value present

@@ -15,9 +15,9 @@ import java.util.Set;
 
 @Configuration
 public class SwaggerConfiguration {
-    private static final String API_NAME = "Spring Boot Application";
+    private static final String API_NAME = "스키 공유 서비스";
     private static final String API_VERSION = "1.0.0";
-    private static final String API_DESCRIPTION = "스웨거 연습";
+    private static final String API_DESCRIPTION = "스키 공유 서비스에 필요한 각종 API 설명서";
 
     // 접속 경로 : http://localhost:8080/swagger-ui/
     @Bean
@@ -28,7 +28,7 @@ public class SwaggerConfiguration {
                 .produces(getProduceContentTypes())
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.demo1"))
+                .apis(RequestHandlerSelectors.basePackage("com.alexgim.sharing"))
                 .paths(PathSelectors.any())
                 .build();
     }
