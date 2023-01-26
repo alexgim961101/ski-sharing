@@ -1,6 +1,6 @@
 package com.alexgim.sharing.user.data.repository;
 
-import com.alexgim.sharing.user.data.entiry.User;
+import com.alexgim.sharing.user.data.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

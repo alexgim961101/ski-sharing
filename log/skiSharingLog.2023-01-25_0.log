@@ -1706,4 +1706,4 @@ INFO  23-01-25 23:56:18[http-nio-8080-exec-2] [DispatcherServlet:547] - Complete
 INFO  23-01-25 23:56:18[http-nio-8080-exec-2] [UserController:44] - ------ signup API 실행 -------
 INFO  23-01-25 23:56:21[http-nio-8080-exec-3] [UserController:73] - ---- 특정 회원 조회 API 실행 ----
 INFO  23-01-25 23:56:21[http-nio-8080-exec-3] [UserServiceImpl:54] - --- readOne 메서드 작동 , userId : 1
-INFO  23-01-25 23:56:21[http-nio-8080-exec-3] [UserServiceImpl:60] - user 정보 : com.alexgim.sharing.user.data.entiry.User@200c2d2a
+INFO  23-01-25 23:56:21[http-nio-8080-exec-3] [UserServiceImpl:60] - user 정보 : com.alexgim.sharing.user.data.entity.User@200c2d2a

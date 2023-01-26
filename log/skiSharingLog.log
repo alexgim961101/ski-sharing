@@ -31,11 +31,11 @@ INFO  23-01-26 01:01:05[http-nio-8080-exec-1] [DispatcherServlet:547] - Complete
 INFO  23-01-26 01:01:05[http-nio-8080-exec-1] [UserController:45] - ------ signup API 실행 -------
 INFO  23-01-26 01:01:08[http-nio-8080-exec-3] [UserController:74] - ---- 특정 회원 조회 API 실행 ----
 INFO  23-01-26 01:01:08[http-nio-8080-exec-3] [UserServiceImpl:54] - --- readOne 메서드 작동 , userId : 1
-INFO  23-01-26 01:01:08[http-nio-8080-exec-3] [UserServiceImpl:60] - user 정보 : com.alexgim.sharing.user.data.entiry.User@22a57b30
+INFO  23-01-26 01:01:08[http-nio-8080-exec-3] [UserServiceImpl:60] - user 정보 : com.alexgim.sharing.user.data.entity.User@22a57b30
 INFO  23-01-26 01:01:41[http-nio-8080-exec-5] [UserController:45] - ------ signup API 실행 -------
 INFO  23-01-26 01:01:54[http-nio-8080-exec-7] [UserController:74] - ---- 특정 회원 조회 API 실행 ----
 INFO  23-01-26 01:01:54[http-nio-8080-exec-7] [UserServiceImpl:54] - --- readOne 메서드 작동 , userId : 2
-INFO  23-01-26 01:01:54[http-nio-8080-exec-7] [UserServiceImpl:60] - user 정보 : com.alexgim.sharing.user.data.entiry.User@7916db18
+INFO  23-01-26 01:01:54[http-nio-8080-exec-7] [UserServiceImpl:60] - user 정보 : com.alexgim.sharing.user.data.entity.User@7916db18
 INFO  23-01-26 01:01:57[http-nio-8080-exec-8] [UserController:74] - ---- 특정 회원 조회 API 실행 ----
 INFO  23-01-26 01:01:57[http-nio-8080-exec-8] [UserServiceImpl:54] - --- readOne 메서드 작동 , userId : 0
 ERROR 23-01-26 01:01:57[http-nio-8080-exec-8] [UserServiceImpl:57] - No value present

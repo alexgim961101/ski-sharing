@@ -1,7 +1,7 @@
 package com.alexgim.sharing.user.data.dto;
 
 import com.alexgim.sharing.user.data.RoleType;
-import com.alexgim.sharing.user.data.entiry.User;
+import com.alexgim.sharing.user.data.entity.User;
 import io.swagger.annotations.ApiParam;
 import lombok.Data;
 

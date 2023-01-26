@@ -1,4 +1,4 @@
-package com.alexgim.sharing.user.data.entiry;
+package com.alexgim.sharing.user.data.entity;
 
 import com.alexgim.sharing.common.BaseEntity;
 import com.alexgim.sharing.user.data.RoleType;

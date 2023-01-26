@@ -5,7 +5,7 @@ import com.alexgim.sharing.config.BaseResponseStatus;
 import com.alexgim.sharing.user.data.dto.UserDetailResDto;
 import com.alexgim.sharing.user.data.dto.UserDto;
 import com.alexgim.sharing.user.data.dto.UserResDto;
-import com.alexgim.sharing.user.data.entiry.User;
+import com.alexgim.sharing.user.data.entity.User;
 import com.alexgim.sharing.user.data.repository.UserRepository;
 import com.alexgim.sharing.user.service.UserService;
 import org.slf4j.Logger;
@@ -15,7 +15,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class UserServiceImpl implements UserService {
