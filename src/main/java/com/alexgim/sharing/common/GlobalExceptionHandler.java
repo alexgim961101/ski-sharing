@@ -1,7 +1,5 @@
 package com.alexgim.sharing.common;
 
-import com.alexgim.sharing.config.BaseException;
-import com.alexgim.sharing.config.BaseResponse;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
