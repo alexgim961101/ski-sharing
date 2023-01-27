@@ -5,13 +5,16 @@ import com.alexgim.sharing.common.BaseEntity;
 import com.alexgim.sharing.image.data.entity.Image;
 import com.alexgim.sharing.user.data.entity.User;
 import lombok.Builder;
+import lombok.Data;
 
 import javax.persistence.*;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "board")
+@Data
 @Builder
 public class Board extends BaseEntity {
 
@@ -21,7 +24,7 @@ public class Board extends BaseEntity {
     private Long boardId;
 
     @ManyToOne
-    @Column(name = "user_id", nullable = false)
+    @JoinColumn(name = "user_id", nullable = false)
     private User userId;
 
     @Column(nullable = false)
@@ -35,9 +38,9 @@ public class Board extends BaseEntity {
     @Column(nullable = false)
     private String area;
 
-    private LocalDateTime startDate;
+    private LocalDate startDate;
 
-    private LocalDateTime endDate;
+    private LocalDate endDate;
 
     @Column(nullable = false)
     private Long price;
@@ -45,7 +48,7 @@ public class Board extends BaseEntity {
     @Column(nullable = false)
     private BoardStatus status;
 
-    @OneToMany
-    private List<Image> image;
+    @OneToMany(mappedBy = "board", fetch = FetchType.EAGER)
+    private List<Image> image = new ArrayList<>();
 
 }

@@ -1,9 +1,10 @@
 package com.alexgim.sharing.board.service;
 
 import com.alexgim.sharing.board.data.dto.*;
+import com.alexgim.sharing.config.BaseException;
 
 public interface BoardService {
-    PostBoardResp save(PostBoardReq postBoardReq);
+    PostBoardResp save(PostBoardReq postBoardReq) throws BaseException;
 
     GetBoardAllResp readAll();
 

@@ -1,4 +1,8 @@
 spring:
+  servlet:
+    multipart:
+      maxFileSize: 10MB
+      maxRequestSize: 20MB
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
@@ -20,3 +24,8 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
+iamAccessKey : AKIA23TGEDV3A25EMQXA
+iamSecretKry : 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
+bucket : alexgim961101
+region : ap-northeast-2

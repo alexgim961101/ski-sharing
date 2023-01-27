@@ -1,6 +1,8 @@
 package com.alexgim.sharing.image.data.entity;
 
+import com.alexgim.sharing.board.data.entity.Board;
 import com.alexgim.sharing.common.BaseEntity;
+import com.alexgim.sharing.user.data.entity.User;
 
 import javax.persistence.*;
 
@@ -13,13 +15,9 @@ public class Image extends BaseEntity {
     @Column(name = "image_id")
     private Long imageId;
 
-    @ManyToOne
-    @Column(name = "board_id", nullable = false)
-    private Long boardId;
-
-    @ManyToOne
-    @Column(name = "user_id", nullable = false)
-    private Long userId;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "board_id", nullable = false)
+    private Board board;
 
     @Column(nullable = false)
     private String imageName;

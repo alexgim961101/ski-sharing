@@ -18,7 +18,9 @@ public enum BaseResponseStatus {
     // 3000 : Response 오류
 
     // 4000 : DB 오류
-    DB_CONNECTION_ERROR(false, 4000, "DB 연결에 실패하였습니다");
+    DB_CONNECTION_ERROR(false, 4000, "DB 연결에 실패하였습니다"),
+
+    DB_SAVE_FAILED(false, 4001, "DB 저장에 실패하였습니다.");
 
     // 5000 : 서버 오류
 

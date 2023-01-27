@@ -1,6 +1,8 @@
 package com.alexgim.sharing.user.data.entity;
 
+import com.alexgim.sharing.board.data.entity.Board;
 import com.alexgim.sharing.common.BaseEntity;
+import com.alexgim.sharing.image.data.entity.Image;
 import com.alexgim.sharing.user.data.RoleType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -8,6 +10,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "user")
@@ -39,4 +43,8 @@ public class User extends BaseEntity {
 
     @Column(nullable = false)
     private RoleType status;  // 유저의 상태 (admin, normal, stop, delete)
+
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    private List<Board> board = new ArrayList<>();
+
 }
