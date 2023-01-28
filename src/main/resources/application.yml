@@ -25,7 +25,7 @@ spring:
       hibernate:
         format_sql: true
 
-iamAccessKey : AKIA23TGEDV3A25EMQXA
-iamSecretKry : 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
-bucket : alexgim961101
+iamAccessKey :
+iamSecretKry :
+bucket : 
 region : ap-northeast-2

@@ -43,7 +43,5 @@ public class User extends BaseEntity {
     @Column(nullable = false)
     private RoleType status;  // 유저의 상태 (admin, normal, stop, delete)
 
-    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
-    private List<Board> board = new ArrayList<>();
 
 }
