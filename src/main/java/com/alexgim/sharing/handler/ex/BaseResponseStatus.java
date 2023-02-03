@@ -1,4 +1,4 @@
-package com.alexgim.sharing.web.dto;
+package com.alexgim.sharing.handler.ex;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -19,12 +19,14 @@ public enum BaseResponseStatus {
 
     // 4000 : DB 오류
     DB_CONNECTION_ERROR(false, 4000, "DB 연결에 실패하였습니다"),
+    DB_DUPLICATED_NICKNAME(false, 4001, "이미 아이디가 존재합니다"),
 
-    DB_SAVE_FAILED(false, 4001, "DB 저장에 실패하였습니다.");
+    DB_SAVE_FAILED(false, 4001, "DB 저장에 실패하였습니다."),
 
     // 5000 : 서버 오류
 
     // 기타
+    AWS_S3_CONNECTION_FAILED(false,6000, "AWS S3 연결에 실패하였습니다");
 
     private final boolean isSuccess;
     private final int code;

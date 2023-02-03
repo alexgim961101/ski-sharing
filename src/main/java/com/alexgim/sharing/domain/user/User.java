@@ -1,11 +1,14 @@
 package com.alexgim.sharing.domain.user;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.alexgim.sharing.domain.BaseEntity;
+import com.alexgim.sharing.domain.board.Board;
+import com.alexgim.sharing.web.dto.UserStatusType;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.*;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -13,10 +16,34 @@ import javax.persistence.*;
 @Builder
 @Entity
 @Table(name = "user")
-public class User {
+public class User extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id")
+    @Column(name = "user_id", nullable = false)
     private Long id;
+
+    @Column(unique = true)
+    private String nickname;
+
+    @Column(nullable = false)
+    private String password;
+
+    private String img;
+
+    private String content;
+
+    @Column(nullable = false)
+    private String phone;
+
+    @Column(nullable = false)
+    private String email;
+
+    @Column(nullable = false)
+    private UserStatusType status;
+
+    @ToString.Exclude
+    @JsonIgnore
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    private List<Board> boardList = new ArrayList<>();
 }

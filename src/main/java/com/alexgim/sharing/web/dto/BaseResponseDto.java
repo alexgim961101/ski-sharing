@@ -1,5 +1,6 @@
 package com.alexgim.sharing.web.dto;
 
+import com.alexgim.sharing.handler.ex.BaseResponseStatus;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -31,9 +32,10 @@ public class BaseResponseDto<T> {
     }
 
     // 요청 실패
-    public BaseResponseDto(BaseResponseStatus status) {
+    public BaseResponseDto(BaseResponseStatus status, T result) {
         this.isSuccess = status.isSuccess();
         this.message = status.getMessage();
         this.code = status.getCode();
+        this.result = result;
     }
 }
