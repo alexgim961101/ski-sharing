@@ -1,4 +1,4 @@
-package com.alexgim.sharing.common;
+package com.alexgim.sharing.util;
 
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.model.ListObjectsV2Result;

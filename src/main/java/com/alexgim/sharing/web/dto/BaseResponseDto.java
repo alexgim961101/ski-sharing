@@ -1,6 +1,5 @@
-package com.alexgim.sharing.common;
+package com.alexgim.sharing.web.dto;
 
-import com.alexgim.sharing.common.BaseResponseStatus;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -10,7 +9,7 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 @JsonPropertyOrder({"isSuccess", "code", "message", "result"})  // Json 출력 순서 결정
-public class BaseResponse<T> {
+public class BaseResponseDto<T> {
 
     /**
      * final을 쓰는 이유는 무엇일까? 변경되어서는 안되는 값이라는 것을 강조하기 위해서?
@@ -24,7 +23,7 @@ public class BaseResponse<T> {
     private T result;
 
     // 요청 성공
-    public BaseResponse(T result) {
+    public BaseResponseDto(T result) {
         this.isSuccess = BaseResponseStatus.SUCCESS.isSuccess();
         this.message = BaseResponseStatus.SUCCESS.getMessage();
         this.code = BaseResponseStatus.SUCCESS.getCode();
@@ -32,7 +31,7 @@ public class BaseResponse<T> {
     }
 
     // 요청 실패
-    public BaseResponse(BaseResponseStatus status) {
+    public BaseResponseDto(BaseResponseStatus status) {
         this.isSuccess = status.isSuccess();
         this.message = status.getMessage();
         this.code = status.getCode();

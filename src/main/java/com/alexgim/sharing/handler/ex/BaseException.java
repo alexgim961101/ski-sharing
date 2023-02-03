@@ -1,5 +1,6 @@
-package com.alexgim.sharing.common;
+package com.alexgim.sharing.handler.ex;
 
+import com.alexgim.sharing.web.dto.BaseResponseStatus;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;

@@ -1,4 +1,4 @@
-package com.alexgim.sharing.common;
+package com.alexgim.sharing.domain;
 
 import lombok.Getter;
 import org.springframework.data.annotation.CreatedDate;

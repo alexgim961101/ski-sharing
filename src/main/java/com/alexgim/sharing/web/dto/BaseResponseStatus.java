@@ -1,4 +1,4 @@
-package com.alexgim.sharing.common;
+package com.alexgim.sharing.web.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
