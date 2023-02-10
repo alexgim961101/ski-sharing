@@ -26,6 +26,7 @@ public class PostBoardReq {
                 .startDate(startDate)
                 .endDate(endDate)
                 .price(price)
+                .count(0)
                 .status(BoardStatusType.ING).build();
     }
 }

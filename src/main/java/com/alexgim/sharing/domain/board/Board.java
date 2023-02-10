@@ -45,6 +45,9 @@ public class Board extends BaseEntity {
     private Long price;
 
     @Column(nullable = false)
+    private int count;
+
+    @Column(nullable = false)
     private BoardStatusType status;
 
     @OneToMany(mappedBy = "board", fetch = FetchType.EAGER)

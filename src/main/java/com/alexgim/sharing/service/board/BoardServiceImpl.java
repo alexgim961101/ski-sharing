@@ -9,8 +9,12 @@ import com.alexgim.sharing.domain.user.UserRepository;
 import com.alexgim.sharing.handler.ex.BaseException;
 import com.alexgim.sharing.handler.ex.BaseResponseStatus;
 import com.alexgim.sharing.util.S3Component;
+import com.alexgim.sharing.web.dto.board.GetBoardResp;
 import com.alexgim.sharing.web.dto.board.PostBoardReq;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
@@ -18,6 +22,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.util.ArrayList;
 import java.util.List;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class BoardServiceImpl implements BoardService{
@@ -69,10 +74,23 @@ public class BoardServiceImpl implements BoardService{
         return boardEntity;
     }
 
-//    @Override
-//    public void readAll(Pageable pageable) {
-//        boardRepository.findAll(pageable);
-//    }
+    @Override
+    public List<GetBoardResp> readAll(Pageable pageable) {
+        Page<Board> boardEntitys = boardRepository.findAllBoard10Size(pageable);
+        List<GetBoardResp> list = new ArrayList<>();
 
+        for(Board board : boardEntitys) {
+            User user = board.getUser();         // 여기서 꺼낸 user 객체는 영속성 상태인가?
+            String nickname = user.getNickname();
+            log.info("유저 nickname : {}", nickname);
 
+            list.add(GetBoardResp.builder()
+                    .title(board.getTitle())
+                    .nickname(nickname)
+                    .updatedAt(board.getUpdatedAt())
+                    .count(board.getCount())
+                    .build());
+        }
+        return list;
+    }
 }

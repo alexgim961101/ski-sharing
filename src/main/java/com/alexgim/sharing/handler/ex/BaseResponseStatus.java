@@ -24,6 +24,9 @@ public enum BaseResponseStatus {
     DB_SAVE_FAILED(false, 4001, "DB 저장에 실패하였습니다."),
 
     // 5000 : 서버 오류
+    EMPTY_JWT(false, 5000, "jwt 토큰이 존재하지 않습니다"),
+
+    INVALID_JWT(false, 5001, "유효하지 않은 JWT 토큰입니다"),
 
     // 기타
     AWS_S3_CONNECTION_FAILED(false,6000, "AWS S3 연결에 실패하였습니다");

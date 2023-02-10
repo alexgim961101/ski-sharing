@@ -5,19 +5,20 @@ import com.alexgim.sharing.handler.ex.BaseException;
 import com.alexgim.sharing.handler.ex.BaseResponseStatus;
 import com.alexgim.sharing.service.board.BoardService;
 import com.alexgim.sharing.web.dto.BaseResponseDto;
+import com.alexgim.sharing.web.dto.board.GetBoardResp;
 import com.alexgim.sharing.web.dto.board.PostBoardReq;
 import io.swagger.annotations.ApiOperation;
-import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.domain.Pageable;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.awt.print.Pageable;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -37,11 +38,12 @@ public class BoardController {
         return new BaseResponseDto(boardEntity);
     }
 
-//    @ApiOperation(value = "게시판 출력 API", notes = "10개씩 게시판 출력")
-//    @GetMapping
-//    public BaseResponseDto readTen(Pageable pageable) {
-//
-//    }
+    @ApiOperation(value = "게시판 출력 API", notes = "10개씩 게시판 출력")
+    @GetMapping
+    public BaseResponseDto readTen(Pageable pageable) {
+        List<GetBoardResp> list = boardService.readAll(pageable);
+        return new BaseResponseDto(list);
+    }
 
     public void checkValidation(BindingResult bindingResult) {
         if(bindingResult.hasErrors()) {
