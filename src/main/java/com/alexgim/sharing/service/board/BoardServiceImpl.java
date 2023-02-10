@@ -68,4 +68,11 @@ public class BoardServiceImpl implements BoardService{
 
         return boardEntity;
     }
+
+//    @Override
+//    public void readAll(Pageable pageable) {
+//        boardRepository.findAll(pageable);
+//    }
+
+
 }

@@ -7,6 +7,7 @@ import com.alexgim.sharing.service.board.BoardService;
 import com.alexgim.sharing.web.dto.BaseResponseDto;
 import com.alexgim.sharing.web.dto.board.PostBoardReq;
 import io.swagger.annotations.ApiOperation;
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +16,7 @@ import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.awt.print.Pageable;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -34,6 +36,12 @@ public class BoardController {
         Board boardEntity = boardService.save(userId, postBoardReq);
         return new BaseResponseDto(boardEntity);
     }
+
+//    @ApiOperation(value = "게시판 출력 API", notes = "10개씩 게시판 출력")
+//    @GetMapping
+//    public BaseResponseDto readTen(Pageable pageable) {
+//
+//    }
 
     public void checkValidation(BindingResult bindingResult) {
         if(bindingResult.hasErrors()) {

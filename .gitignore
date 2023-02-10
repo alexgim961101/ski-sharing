@@ -37,4 +37,8 @@ out/
 .vscode/
 
 ## setting ##
-.yml
+*.yml
+application.properties
+
+## querydsl ##
+src/main/generated/
