@@ -13,6 +13,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Optional;
+
 @Service
 @RequiredArgsConstructor
 public class CommentServiceImpl implements CommentService{
@@ -45,6 +47,36 @@ public class CommentServiceImpl implements CommentService{
                 .commentId(commentEntity.getId())
                 .content(commentEntity.getContent())
                 .createdAt(commentEntity.getCreatedAt())
+                .build();
+    }
+
+    @Override
+    @Transactional
+    public PostCommentResp writeChildComment(Long userId, Long boardId, Long commentId, PostCommentReq postCommentReq) {
+        User userEntity = userRepository.findById(userId).get();
+        Board boardEntity = boardRepository.findById(boardId).get();
+        Comment parCommentEntity = commentRepository.findById(commentId).get();
+
+        Comment childCommentEntity = commentRepository.save(Comment.builder()
+                .user(userEntity)
+                .superComment(parCommentEntity)
+                .content(postCommentReq.getContent())
+                .status(CommentStatus.EXIST)
+                .board(boardEntity)
+                .build());
+
+        parCommentEntity.getSubCommentList().add(childCommentEntity);
+        boardEntity.getCommentList().add(childCommentEntity);
+        userEntity.getCommentList().add(childCommentEntity);
+
+        return PostCommentResp.builder()
+                .userId(userEntity.getId())
+                .nickname(userEntity.getNickname())
+                .img(userEntity.getImg())
+                .boardId(boardId)
+                .commentId(childCommentEntity.getId())
+                .content(childCommentEntity.getContent())
+                .createdAt(childCommentEntity.getCreatedAt())
                 .build();
     }
 }

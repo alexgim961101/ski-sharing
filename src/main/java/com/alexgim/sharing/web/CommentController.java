@@ -50,6 +50,15 @@ public class CommentController {
     /**
      * 자식 댓글 쓰기
      * */
+    @PostMapping("/{boardId}/{commentId}")
+    public BaseResponseDto childCommentWrite(@PathVariable Long boardId, @PathVariable Long commentId, @Valid @RequestBody PostCommentReq postCommentReq, BindingResult bindingResult) {
+        checkValidation(bindingResult);
+        if(boardId < 1 || commentId < 1) throw new BaseException(BaseResponseStatus.INVALID_REQUEST);
+
+        Long userId = jwtService.getUserId();
+        PostCommentResp postCommentResp = commentService.writeChildComment(userId, boardId, commentId, postCommentReq);
+        return new BaseResponseDto(postCommentResp);
+    }
 
     /**
      * 자식 댓글 불러오기

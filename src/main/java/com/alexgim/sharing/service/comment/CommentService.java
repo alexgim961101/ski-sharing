@@ -5,4 +5,7 @@ import com.alexgim.sharing.web.dto.comment.PostCommentResp;
 
 public interface CommentService {
     PostCommentResp writeComment(Long userId, Long boardId, PostCommentReq postCommentReq);
+
+    PostCommentResp writeChildComment(Long userId, Long boardId, Long commentId, PostCommentReq postCommentReq);
+
 }
