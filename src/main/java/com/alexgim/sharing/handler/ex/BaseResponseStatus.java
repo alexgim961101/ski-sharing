@@ -14,6 +14,7 @@ public enum BaseResponseStatus {
 
     // 2000 : Request 오류
     INVALID_REQUEST(false, 2000, "잘못된 요청값입니다"),
+    INVALID_LOGIN(false, 2001, "존재하지 않는 회원입니다"),
 
     // 3000 : Response 오류
 

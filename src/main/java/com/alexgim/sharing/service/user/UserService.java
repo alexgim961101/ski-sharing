@@ -1,9 +1,7 @@
 package com.alexgim.sharing.service.user;
 
 import com.alexgim.sharing.domain.user.User;
-import com.alexgim.sharing.web.dto.user.UserDto;
-import com.alexgim.sharing.web.dto.user.UserLoginReqDto;
-import com.alexgim.sharing.web.dto.user.UserUpdateProfileDto;
+import com.alexgim.sharing.web.dto.user.*;
 import org.springframework.data.domain.Pageable;
 
 import java.util.List;
@@ -16,7 +14,7 @@ public interface UserService {
      * 3. StatusType 부여 (OK)
      * 4. 아이디 중복 체크 (OK)
      * */
-    User enroll(UserLoginReqDto userLoginReqDto);
+    User enroll(UserSignUpReqDto userSignUpReqDto);
 
     /**
      * 프로필 사진 변경 로직
@@ -31,4 +29,9 @@ public interface UserService {
     User updateContent(Long userId, String content);
 
     List<UserDto> readAll(Pageable pageable);
+
+    /**
+     * 로그인 로직
+     * */
+    PostLoginResp login(PostLoginReq postLoginReq);
 }

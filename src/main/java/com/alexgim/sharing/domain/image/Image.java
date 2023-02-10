@@ -2,6 +2,7 @@ package com.alexgim.sharing.domain.image;
 
 import com.alexgim.sharing.domain.BaseEntity;
 import com.alexgim.sharing.domain.board.Board;
+import com.alexgim.sharing.web.dto.image.ImageDto;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
@@ -31,4 +32,13 @@ public class Image extends BaseEntity {
 
     @Column(nullable = false)
     private String url;  // 사진이 저장된 url
+
+    public ImageDto toDto() {
+        // board는 굳이 넣을 필요가 없고 넣어도 무한 참조 오류만 발생
+        return ImageDto.builder()
+                .id(id)
+                .name(name)
+                .url(url)
+                .build();
+    }
 }

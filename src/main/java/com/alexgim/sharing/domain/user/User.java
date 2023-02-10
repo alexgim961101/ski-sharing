@@ -2,6 +2,7 @@ package com.alexgim.sharing.domain.user;
 
 import com.alexgim.sharing.domain.BaseEntity;
 import com.alexgim.sharing.domain.board.Board;
+import com.alexgim.sharing.domain.comment.Comment;
 import com.alexgim.sharing.web.dto.UserStatusType;
 import com.alexgim.sharing.web.dto.user.UserDto;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -47,6 +48,9 @@ public class User extends BaseEntity {
     @JsonIgnore
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     private List<Board> boardList = new ArrayList<>();
+
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+    private List<Comment> commentList = new ArrayList<>();
 
     public UserDto toDto(){
         return UserDto.builder()

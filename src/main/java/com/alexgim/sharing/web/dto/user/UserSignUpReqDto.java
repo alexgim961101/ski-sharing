@@ -11,7 +11,7 @@ import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 @Data
-public class UserLoginReqDto {
+public class UserSignUpReqDto {
 
     @ApiParam(value = "닉네임", required = true)
     @NotBlank

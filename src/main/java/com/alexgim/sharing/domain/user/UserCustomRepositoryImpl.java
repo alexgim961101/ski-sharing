@@ -18,13 +18,6 @@ import static com.alexgim.sharing.domain.user.QUser.user;
 public class UserCustomRepositoryImpl implements UserCustomRepository{
     private final JPAQueryFactory jpaQueryFactory;
     @Override
-    public User findByUsername(String username) {
-        return jpaQueryFactory.selectFrom(user)
-                .where(user.nickname.eq(username))
-                .fetchOne();
-    }
-
-    @Override
     public Page<User> pageUserAll(Pageable pageable) {
         QueryResults<User> userQueryResults = jpaQueryFactory.selectFrom(user)
                 .orderBy(user.createdAt.desc())
@@ -36,5 +29,12 @@ public class UserCustomRepositoryImpl implements UserCustomRepository{
         long total = userQueryResults.getTotal();
 
         return new PageImpl<>(results, pageable, total);
+    }
+
+    @Override
+    public User findByNickname(String nickname) {
+        return jpaQueryFactory.selectFrom(user)
+                .where(user.nickname.eq(nickname))
+                .fetchOne();
     }
 }

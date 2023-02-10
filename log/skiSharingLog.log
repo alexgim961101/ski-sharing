@@ -1,241 +1,598 @@
-INFO  23-02-10 12:46:33[Test worker] [SharingApplicationTests:55] - Starting SharingApplicationTests using Java 11 on DESKTOP-OLLBE1M with PID 6280 (started by alexg in D:\spring\sharing)
-INFO  23-02-10 12:46:33[Test worker] [SharingApplicationTests:631] - No active profile set, falling back to 1 default profile: "default"
-INFO  23-02-10 12:46:33[background-preinit] [Version:21] - HV000001: Hibernate Validator 6.2.5.Final
-INFO  23-02-10 12:46:34[Test worker] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-INFO  23-02-10 12:46:34[Test worker] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 97 ms. Found 3 JPA repository interfaces.
-INFO  23-02-10 12:46:36[Test worker] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-INFO  23-02-10 12:46:36[Test worker] [Version:44] - HHH000412: Hibernate ORM core version 5.6.14.Final
-INFO  23-02-10 12:46:36[Test worker] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-INFO  23-02-10 12:46:36[Test worker] [HikariDataSource:110] - HikariPool-1 - Starting...
-INFO  23-02-10 12:46:37[Test worker] [HikariDataSource:123] - HikariPool-1 - Start completed.
-INFO  23-02-10 12:46:37[Test worker] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-INFO  23-02-10 12:46:39[Test worker] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-INFO  23-02-10 12:46:39[Test worker] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-WARN  23-02-10 12:46:39[Test worker] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-INFO  23-02-10 12:46:42[Test worker] [DefaultSecurityFilterChain:55] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7c3c6564, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7655dc27, org.springframework.security.web.context.SecurityContextPersistenceFilter@685280dd, org.springframework.security.web.header.HeaderWriterFilter@4c752425, org.springframework.security.web.authentication.logout.LogoutFilter@3d5a6849, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2140582, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@879f852, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e856aa4, org.springframework.security.web.session.SessionManagementFilter@30b91493, org.springframework.security.web.access.ExceptionTranslationFilter@4f1cb802]
-INFO  23-02-10 12:46:43[Test worker] [SharingApplicationTests:61] - Started SharingApplicationTests in 11.551 seconds (JVM running for 13.959)
-INFO  23-02-10 12:46:44[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
-INFO  23-02-10 12:46:44[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
-INFO  23-02-10 12:46:44[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
-INFO  23-02-10 12:48:38[Test worker] [SharingApplicationTests:55] - Starting SharingApplicationTests using Java 11 on DESKTOP-OLLBE1M with PID 10568 (started by alexg in D:\spring\sharing)
-INFO  23-02-10 12:48:38[Test worker] [SharingApplicationTests:631] - No active profile set, falling back to 1 default profile: "default"
-INFO  23-02-10 12:48:38[background-preinit] [Version:21] - HV000001: Hibernate Validator 6.2.5.Final
-INFO  23-02-10 12:48:40[Test worker] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-INFO  23-02-10 12:48:40[Test worker] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 95 ms. Found 3 JPA repository interfaces.
-INFO  23-02-10 12:48:41[Test worker] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-INFO  23-02-10 12:48:41[Test worker] [Version:44] - HHH000412: Hibernate ORM core version 5.6.14.Final
-INFO  23-02-10 12:48:41[Test worker] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-INFO  23-02-10 12:48:42[Test worker] [HikariDataSource:110] - HikariPool-1 - Starting...
-INFO  23-02-10 12:48:42[Test worker] [HikariDataSource:123] - HikariPool-1 - Start completed.
-INFO  23-02-10 12:48:42[Test worker] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-INFO  23-02-10 12:48:44[Test worker] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-INFO  23-02-10 12:48:44[Test worker] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-WARN  23-02-10 12:48:44[Test worker] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-INFO  23-02-10 12:48:47[Test worker] [DefaultSecurityFilterChain:55] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@77376e83, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@708f4d81, org.springframework.security.web.context.SecurityContextPersistenceFilter@2771e501, org.springframework.security.web.header.HeaderWriterFilter@4c29138a, org.springframework.security.web.authentication.logout.LogoutFilter@45cd5c56, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40a32c25, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45accb5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23cf78f9, org.springframework.security.web.session.SessionManagementFilter@2c64e2d0, org.springframework.security.web.access.ExceptionTranslationFilter@14d5b2ac]
-INFO  23-02-10 12:48:48[Test worker] [SharingApplicationTests:61] - Started SharingApplicationTests in 10.645 seconds (JVM running for 12.897)
-INFO  23-02-10 12:48:49[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
-INFO  23-02-10 12:48:49[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
-INFO  23-02-10 12:48:49[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
-INFO  23-02-10 14:56:08[Test worker] [SharingApplicationTests:55] - Starting SharingApplicationTests using Java 11 on DESKTOP-OLLBE1M with PID 2632 (started by alexg in D:\spring\sharing)
-INFO  23-02-10 14:56:08[Test worker] [SharingApplicationTests:631] - No active profile set, falling back to 1 default profile: "default"
-INFO  23-02-10 14:56:08[background-preinit] [Version:21] - HV000001: Hibernate Validator 6.2.5.Final
-INFO  23-02-10 14:56:10[Test worker] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-INFO  23-02-10 14:56:10[Test worker] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 101 ms. Found 3 JPA repository interfaces.
-INFO  23-02-10 14:56:11[Test worker] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-INFO  23-02-10 14:56:11[Test worker] [Version:44] - HHH000412: Hibernate ORM core version 5.6.14.Final
-INFO  23-02-10 14:56:11[Test worker] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-INFO  23-02-10 14:56:11[Test worker] [HikariDataSource:110] - HikariPool-1 - Starting...
-INFO  23-02-10 14:56:12[Test worker] [HikariDataSource:123] - HikariPool-1 - Start completed.
-INFO  23-02-10 14:56:12[Test worker] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-INFO  23-02-10 14:56:14[Test worker] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-INFO  23-02-10 14:56:14[Test worker] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-WARN  23-02-10 14:56:14[Test worker] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-INFO  23-02-10 14:56:17[Test worker] [DefaultSecurityFilterChain:55] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@72f86029, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@740ef827, org.springframework.security.web.context.SecurityContextPersistenceFilter@e87c4cf, org.springframework.security.web.header.HeaderWriterFilter@2728e305, org.springframework.security.web.authentication.logout.LogoutFilter@e00f822, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3fc4e667, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7793eaca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@198eeb36, org.springframework.security.web.session.SessionManagementFilter@228c854f, org.springframework.security.web.access.ExceptionTranslationFilter@705e24fb]
-INFO  23-02-10 14:56:19[Test worker] [SharingApplicationTests:61] - Started SharingApplicationTests in 11.788 seconds (JVM running for 14.434)
-INFO  23-02-10 14:56:20[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
-INFO  23-02-10 14:56:20[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
-INFO  23-02-10 14:56:20[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
-INFO  23-02-10 14:58:16[Test worker] [SharingApplicationTests:55] - Starting SharingApplicationTests using Java 11 on DESKTOP-OLLBE1M with PID 7888 (started by alexg in D:\spring\sharing)
-INFO  23-02-10 14:58:16[Test worker] [SharingApplicationTests:631] - No active profile set, falling back to 1 default profile: "default"
-INFO  23-02-10 14:58:16[background-preinit] [Version:21] - HV000001: Hibernate Validator 6.2.5.Final
-INFO  23-02-10 14:58:18[Test worker] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-INFO  23-02-10 14:58:18[Test worker] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 95 ms. Found 3 JPA repository interfaces.
-INFO  23-02-10 14:58:19[Test worker] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-INFO  23-02-10 14:58:19[Test worker] [Version:44] - HHH000412: Hibernate ORM core version 5.6.14.Final
-INFO  23-02-10 14:58:20[Test worker] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-INFO  23-02-10 14:58:20[Test worker] [HikariDataSource:110] - HikariPool-1 - Starting...
-INFO  23-02-10 14:58:20[Test worker] [HikariDataSource:123] - HikariPool-1 - Start completed.
-INFO  23-02-10 14:58:20[Test worker] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-INFO  23-02-10 14:58:22[Test worker] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-INFO  23-02-10 14:58:22[Test worker] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-WARN  23-02-10 14:58:22[Test worker] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-INFO  23-02-10 14:58:26[Test worker] [DefaultSecurityFilterChain:55] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@72f86029, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@740ef827, org.springframework.security.web.context.SecurityContextPersistenceFilter@e87c4cf, org.springframework.security.web.header.HeaderWriterFilter@2728e305, org.springframework.security.web.authentication.logout.LogoutFilter@e00f822, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3fc4e667, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7793eaca, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@198eeb36, org.springframework.security.web.session.SessionManagementFilter@228c854f, org.springframework.security.web.access.ExceptionTranslationFilter@705e24fb]
-INFO  23-02-10 14:58:28[Test worker] [SharingApplicationTests:61] - Started SharingApplicationTests in 12.875 seconds (JVM running for 15.123)
-INFO  23-02-10 14:58:29[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
-INFO  23-02-10 14:58:29[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
-INFO  23-02-10 14:58:29[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
-INFO  23-02-10 15:02:13[Test worker] [SharingApplicationTests:55] - Starting SharingApplicationTests using Java 11 on DESKTOP-OLLBE1M with PID 1500 (started by alexg in D:\spring\sharing)
-INFO  23-02-10 15:02:13[Test worker] [SharingApplicationTests:631] - No active profile set, falling back to 1 default profile: "default"
-INFO  23-02-10 15:02:13[background-preinit] [Version:21] - HV000001: Hibernate Validator 6.2.5.Final
-INFO  23-02-10 15:02:14[Test worker] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-INFO  23-02-10 15:02:14[Test worker] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 111 ms. Found 3 JPA repository interfaces.
-INFO  23-02-10 15:02:16[Test worker] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-INFO  23-02-10 15:02:16[Test worker] [Version:44] - HHH000412: Hibernate ORM core version 5.6.14.Final
-INFO  23-02-10 15:02:16[Test worker] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-INFO  23-02-10 15:02:16[Test worker] [HikariDataSource:110] - HikariPool-1 - Starting...
-INFO  23-02-10 15:02:18[Test worker] [HikariDataSource:123] - HikariPool-1 - Start completed.
-INFO  23-02-10 15:02:18[Test worker] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-INFO  23-02-10 15:02:19[Test worker] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-INFO  23-02-10 15:02:19[Test worker] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-WARN  23-02-10 15:02:20[Test worker] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-INFO  23-02-10 15:02:22[Test worker] [DefaultSecurityFilterChain:55] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@198eeb36, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4690cb47, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a4ceb1, org.springframework.security.web.header.HeaderWriterFilter@62291850, org.springframework.security.web.authentication.logout.LogoutFilter@7d2d7a85, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61c1be2f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c09037a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77d80294, org.springframework.security.web.session.SessionManagementFilter@7861a433, org.springframework.security.web.access.ExceptionTranslationFilter@20e7ea20]
-INFO  23-02-10 15:02:24[Test worker] [SharingApplicationTests:61] - Started SharingApplicationTests in 12.043 seconds (JVM running for 14.392)
-INFO  23-02-10 15:02:24[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
-INFO  23-02-10 15:02:24[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
-INFO  23-02-10 15:02:24[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
-INFO  23-02-10 15:05:44[Test worker] [SharingApplicationTests:55] - Starting SharingApplicationTests using Java 11 on DESKTOP-OLLBE1M with PID 9152 (started by alexg in D:\spring\sharing)
-INFO  23-02-10 15:05:44[Test worker] [SharingApplicationTests:631] - No active profile set, falling back to 1 default profile: "default"
-INFO  23-02-10 15:05:44[background-preinit] [Version:21] - HV000001: Hibernate Validator 6.2.5.Final
-INFO  23-02-10 15:05:45[Test worker] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-INFO  23-02-10 15:05:46[Test worker] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 111 ms. Found 3 JPA repository interfaces.
-INFO  23-02-10 15:05:47[Test worker] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-INFO  23-02-10 15:05:47[Test worker] [Version:44] - HHH000412: Hibernate ORM core version 5.6.14.Final
-INFO  23-02-10 15:05:47[Test worker] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-INFO  23-02-10 15:05:47[Test worker] [HikariDataSource:110] - HikariPool-1 - Starting...
-INFO  23-02-10 15:05:48[Test worker] [HikariDataSource:123] - HikariPool-1 - Start completed.
-INFO  23-02-10 15:05:48[Test worker] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-INFO  23-02-10 15:05:49[Test worker] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-INFO  23-02-10 15:05:49[Test worker] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-WARN  23-02-10 15:05:50[Test worker] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-INFO  23-02-10 15:05:52[Test worker] [DefaultSecurityFilterChain:55] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@198eeb36, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4690cb47, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a4ceb1, org.springframework.security.web.header.HeaderWriterFilter@62291850, org.springframework.security.web.authentication.logout.LogoutFilter@7d2d7a85, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61c1be2f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c09037a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77d80294, org.springframework.security.web.session.SessionManagementFilter@7861a433, org.springframework.security.web.access.ExceptionTranslationFilter@20e7ea20]
-INFO  23-02-10 15:05:54[Test worker] [SharingApplicationTests:61] - Started SharingApplicationTests in 10.506 seconds (JVM running for 12.76)
-INFO  23-02-10 15:05:54[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
-INFO  23-02-10 15:05:54[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
-INFO  23-02-10 15:05:54[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
-INFO  23-02-10 15:06:26[restartedMain] [SharingApplication:55] - Starting SharingApplication using Java 11 on DESKTOP-OLLBE1M with PID 1480 (D:\spring\sharing\out\production\classes started by alexg in D:\spring\sharing)
-INFO  23-02-10 15:06:26[restartedMain] [SharingApplication:631] - No active profile set, falling back to 1 default profile: "default"
-INFO  23-02-10 15:06:26[background-preinit] [Version:21] - HV000001: Hibernate Validator 6.2.5.Final
-INFO  23-02-10 15:06:26[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-INFO  23-02-10 15:06:26[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-INFO  23-02-10 15:06:27[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-INFO  23-02-10 15:06:27[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 64 ms. Found 3 JPA repository interfaces.
-INFO  23-02-10 15:06:28[restartedMain] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
-INFO  23-02-10 15:06:28[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
-INFO  23-02-10 15:06:28[restartedMain] [StandardService:173] - Starting service [Tomcat]
-INFO  23-02-10 15:06:28[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.71]
-INFO  23-02-10 15:06:28[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
-INFO  23-02-10 15:06:28[restartedMain] [ServletWebServerApplicationContext:292] - Root WebApplicationContext: initialization completed in 2063 ms
-INFO  23-02-10 15:06:28[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-INFO  23-02-10 15:06:28[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 5.6.14.Final
-INFO  23-02-10 15:06:28[restartedMain] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-INFO  23-02-10 15:06:28[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
-INFO  23-02-10 15:06:29[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
-INFO  23-02-10 15:06:29[restartedMain] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-INFO  23-02-10 15:06:30[restartedMain] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-INFO  23-02-10 15:06:30[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-WARN  23-02-10 15:06:30[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-INFO  23-02-10 15:06:31[restartedMain] [DefaultSecurityFilterChain:55] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@144443c4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6694b7da, org.springframework.security.web.context.SecurityContextPersistenceFilter@22bce436, org.springframework.security.web.header.HeaderWriterFilter@68efcbcd, org.springframework.security.web.authentication.logout.LogoutFilter@64b78e3d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22dbc0e5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@473f98a5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@79a75cf1, org.springframework.security.web.session.SessionManagementFilter@535ba0ae, org.springframework.security.web.access.ExceptionTranslationFilter@2092a961]
-INFO  23-02-10 15:06:31[restartedMain] [OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
-INFO  23-02-10 15:06:31[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
-INFO  23-02-10 15:06:31[restartedMain] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
-INFO  23-02-10 15:06:31[restartedMain] [SharingApplication:61] - Started SharingApplication in 6.274 seconds (JVM running for 8.276)
-INFO  23-02-10 15:07:59[http-nio-8080-exec-1] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-INFO  23-02-10 15:07:59[http-nio-8080-exec-1] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
-INFO  23-02-10 15:07:59[http-nio-8080-exec-1] [DispatcherServlet:547] - Completed initialization in 2 ms
-WARN  23-02-10 15:08:20[http-nio-8080-exec-3] [ExceptionHandlerExceptionResolver:208] - Resolved [javax.validation.ConstraintViolationException: signup.userLoginReqDto.nickname: 공백일 수 없습니다, signup.userLoginReqDto.password: 공백일 수 없습니다]
-WARN  23-02-10 15:08:20[http-nio-8080-exec-5] [ExceptionHandlerExceptionResolver:208] - Resolved [javax.validation.ConstraintViolationException: signup.userLoginReqDto.nickname: 공백일 수 없습니다, signup.userLoginReqDto.password: 공백일 수 없습니다]
-INFO  23-02-10 15:09:47[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
-INFO  23-02-10 15:09:47[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
-INFO  23-02-10 15:09:47[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
-INFO  23-02-10 16:20:17[restartedMain] [SharingApplication:55] - Starting SharingApplication using Java 11 on DESKTOP-OLLBE1M with PID 13420 (D:\spring\sharing\out\production\classes started by alexg in D:\spring\sharing)
-INFO  23-02-10 16:20:17[background-preinit] [Version:21] - HV000001: Hibernate Validator 6.2.5.Final
-INFO  23-02-10 16:20:17[restartedMain] [SharingApplication:631] - No active profile set, falling back to 1 default profile: "default"
-INFO  23-02-10 16:20:17[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-INFO  23-02-10 16:20:17[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-INFO  23-02-10 16:20:18[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-INFO  23-02-10 16:20:18[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 66 ms. Found 3 JPA repository interfaces.
-INFO  23-02-10 16:20:19[restartedMain] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
-INFO  23-02-10 16:20:19[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
-INFO  23-02-10 16:20:19[restartedMain] [StandardService:173] - Starting service [Tomcat]
-INFO  23-02-10 16:20:19[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.71]
-INFO  23-02-10 16:20:19[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
-INFO  23-02-10 16:20:19[restartedMain] [ServletWebServerApplicationContext:292] - Root WebApplicationContext: initialization completed in 2419 ms
-INFO  23-02-10 16:20:20[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-INFO  23-02-10 16:20:20[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 5.6.14.Final
-INFO  23-02-10 16:20:20[restartedMain] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-INFO  23-02-10 16:20:20[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
-INFO  23-02-10 16:20:20[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
-INFO  23-02-10 16:20:20[restartedMain] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-INFO  23-02-10 16:20:21[restartedMain] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-INFO  23-02-10 16:20:21[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-WARN  23-02-10 16:20:21[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-INFO  23-02-10 16:20:22[restartedMain] [DefaultSecurityFilterChain:55] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3e29d055, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5075fd47, org.springframework.security.web.context.SecurityContextPersistenceFilter@d5d3bdb, org.springframework.security.web.header.HeaderWriterFilter@26d7b43e, org.springframework.security.web.authentication.logout.LogoutFilter@1c99e931, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7aa6972, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70a5e574, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c072c72, org.springframework.security.web.session.SessionManagementFilter@659d7fd2, org.springframework.security.web.access.ExceptionTranslationFilter@8f496c1]
-INFO  23-02-10 16:20:23[restartedMain] [OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
-INFO  23-02-10 16:20:23[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
-INFO  23-02-10 16:20:23[restartedMain] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
-INFO  23-02-10 16:20:23[restartedMain] [SharingApplication:61] - Started SharingApplication in 6.991 seconds (JVM running for 9.572)
-INFO  23-02-10 16:20:42[http-nio-8080-exec-2] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-INFO  23-02-10 16:20:42[http-nio-8080-exec-2] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
-INFO  23-02-10 16:20:42[http-nio-8080-exec-2] [DispatcherServlet:547] - Completed initialization in 2 ms
-WARN  23-02-10 16:20:57[http-nio-8080-exec-5] [ExceptionHandlerExceptionResolver:208] - Resolved [com.alexgim.sharing.handler.ex.BaseException]
-INFO  23-02-10 16:21:47[http-nio-8080-exec-9] [BoardController:35] - 요청 DTO 값 확인 : PostBoardReq(title=첫 게시물, content=첫 게시물입니다, startDate=20220122, endDate=20230205, price=10000, fileList=[org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@54008b04, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@1e18d0fa, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@5413dc4a, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@740ae5d0, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@240208fe])
-INFO  23-02-10 16:24:35[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
-INFO  23-02-10 16:24:35[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
-INFO  23-02-10 16:24:35[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
-INFO  23-02-10 16:34:08[Test worker] [SharingApplicationTests:55] - Starting SharingApplicationTests using Java 11 on DESKTOP-OLLBE1M with PID 7400 (started by alexg in D:\spring\sharing)
-INFO  23-02-10 16:34:08[Test worker] [SharingApplicationTests:631] - No active profile set, falling back to 1 default profile: "default"
-INFO  23-02-10 16:34:08[background-preinit] [Version:21] - HV000001: Hibernate Validator 6.2.5.Final
-INFO  23-02-10 16:34:10[Test worker] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-INFO  23-02-10 16:34:10[Test worker] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 103 ms. Found 3 JPA repository interfaces.
-INFO  23-02-10 16:34:11[Test worker] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-INFO  23-02-10 16:34:11[Test worker] [Version:44] - HHH000412: Hibernate ORM core version 5.6.14.Final
-INFO  23-02-10 16:34:11[Test worker] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-INFO  23-02-10 16:34:12[Test worker] [HikariDataSource:110] - HikariPool-1 - Starting...
-INFO  23-02-10 16:34:12[Test worker] [HikariDataSource:123] - HikariPool-1 - Start completed.
-INFO  23-02-10 16:34:12[Test worker] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-INFO  23-02-10 16:34:14[Test worker] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-INFO  23-02-10 16:34:14[Test worker] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-WARN  23-02-10 16:34:14[Test worker] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-INFO  23-02-10 16:34:17[Test worker] [DefaultSecurityFilterChain:55] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@518d4537, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a42da0a, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a262e93, org.springframework.security.web.header.HeaderWriterFilter@47c019d7, org.springframework.security.web.authentication.logout.LogoutFilter@1a2d9177, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63c31664, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5cb4e255, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5824b485, org.springframework.security.web.session.SessionManagementFilter@16124894, org.springframework.security.web.access.ExceptionTranslationFilter@2728e305]
-INFO  23-02-10 16:34:18[Test worker] [SharingApplicationTests:61] - Started SharingApplicationTests in 11.162 seconds (JVM running for 13.556)
-INFO  23-02-10 16:34:18[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
-INFO  23-02-10 16:34:18[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
-INFO  23-02-10 16:34:18[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
-INFO  23-02-10 16:37:21[Test worker] [SharingApplicationTests:55] - Starting SharingApplicationTests using Java 11 on DESKTOP-OLLBE1M with PID 8180 (started by alexg in D:\spring\sharing)
-INFO  23-02-10 16:37:21[Test worker] [SharingApplicationTests:631] - No active profile set, falling back to 1 default profile: "default"
-INFO  23-02-10 16:37:21[background-preinit] [Version:21] - HV000001: Hibernate Validator 6.2.5.Final
-INFO  23-02-10 16:37:23[Test worker] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-INFO  23-02-10 16:37:23[Test worker] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 99 ms. Found 3 JPA repository interfaces.
-INFO  23-02-10 16:37:24[Test worker] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-INFO  23-02-10 16:37:24[Test worker] [Version:44] - HHH000412: Hibernate ORM core version 5.6.14.Final
-INFO  23-02-10 16:37:24[Test worker] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-INFO  23-02-10 16:37:24[Test worker] [HikariDataSource:110] - HikariPool-1 - Starting...
-INFO  23-02-10 16:37:25[Test worker] [HikariDataSource:123] - HikariPool-1 - Start completed.
-INFO  23-02-10 16:37:25[Test worker] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-INFO  23-02-10 16:37:26[Test worker] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-INFO  23-02-10 16:37:26[Test worker] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-WARN  23-02-10 16:37:26[Test worker] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-INFO  23-02-10 16:37:29[Test worker] [DefaultSecurityFilterChain:55] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@518d4537, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a42da0a, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a262e93, org.springframework.security.web.header.HeaderWriterFilter@47c019d7, org.springframework.security.web.authentication.logout.LogoutFilter@1a2d9177, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63c31664, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5cb4e255, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5824b485, org.springframework.security.web.session.SessionManagementFilter@16124894, org.springframework.security.web.access.ExceptionTranslationFilter@2728e305]
-INFO  23-02-10 16:37:31[Test worker] [SharingApplicationTests:61] - Started SharingApplicationTests in 10.648 seconds (JVM running for 13.185)
-INFO  23-02-10 16:37:31[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
-INFO  23-02-10 16:37:31[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
-INFO  23-02-10 16:37:31[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
-INFO  23-02-10 23:23:37[Test worker] [SharingApplicationTests:55] - Starting SharingApplicationTests using Java 11 on DESKTOP-OLLBE1M with PID 13488 (started by alexg in D:\spring\sharing)
-INFO  23-02-10 23:23:37[Test worker] [SharingApplicationTests:631] - No active profile set, falling back to 1 default profile: "default"
-INFO  23-02-10 23:23:37[background-preinit] [Version:21] - HV000001: Hibernate Validator 6.2.5.Final
-INFO  23-02-10 23:23:39[Test worker] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-INFO  23-02-10 23:23:39[Test worker] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 111 ms. Found 3 JPA repository interfaces.
-INFO  23-02-10 23:23:40[Test worker] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
-INFO  23-02-10 23:23:40[Test worker] [Version:44] - HHH000412: Hibernate ORM core version 5.6.14.Final
-INFO  23-02-10 23:23:41[Test worker] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-INFO  23-02-10 23:23:41[Test worker] [HikariDataSource:110] - HikariPool-1 - Starting...
-INFO  23-02-10 23:23:41[Test worker] [HikariDataSource:123] - HikariPool-1 - Start completed.
-INFO  23-02-10 23:23:41[Test worker] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-INFO  23-02-10 23:23:43[Test worker] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-INFO  23-02-10 23:23:43[Test worker] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
-WARN  23-02-10 23:23:43[Test worker] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-INFO  23-02-10 23:23:46[Test worker] [DefaultSecurityFilterChain:55] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@712adc04, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@165634aa, org.springframework.security.web.context.SecurityContextPersistenceFilter@404cc16a, org.springframework.security.web.header.HeaderWriterFilter@48bafe39, org.springframework.security.web.authentication.logout.LogoutFilter@2fad7002, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28e12bc5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7854f2a2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c2503d2, org.springframework.security.web.session.SessionManagementFilter@5bbd8118, org.springframework.security.web.access.ExceptionTranslationFilter@f55ecec]
-INFO  23-02-10 23:23:47[Test worker] [SharingApplicationTests:61] - Started SharingApplicationTests in 10.605 seconds (JVM running for 13.001)
-INFO  23-02-10 23:23:48[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
-INFO  23-02-10 23:23:48[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
-INFO  23-02-10 23:23:48[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+INFO  23-02-11 00:00:34[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  23-02-11 00:00:34[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+INFO  23-02-11 00:00:34[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+INFO  23-02-11 00:00:46[background-preinit] [Version:21] - HV000001: Hibernate Validator 6.2.5.Final
+INFO  23-02-11 00:00:46[restartedMain] [SharingApplication:55] - Starting SharingApplication using Java 11 on DESKTOP-OLLBE1M with PID 8768 (D:\spring\sharing\out\production\classes started by alexg in D:\spring\sharing)
+INFO  23-02-11 00:00:46[restartedMain] [SharingApplication:631] - No active profile set, falling back to 1 default profile: "default"
+INFO  23-02-11 00:00:46[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  23-02-11 00:00:46[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  23-02-11 00:00:48[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  23-02-11 00:00:48[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 94 ms. Found 3 JPA repository interfaces.
+INFO  23-02-11 00:00:49[restartedMain] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-11 00:00:49[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-11 00:00:49[restartedMain] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-11 00:00:49[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.71]
+INFO  23-02-11 00:00:49[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-11 00:00:49[restartedMain] [ServletWebServerApplicationContext:292] - Root WebApplicationContext: initialization completed in 2541 ms
+INFO  23-02-11 00:00:49[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  23-02-11 00:00:49[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 5.6.14.Final
+INFO  23-02-11 00:00:49[restartedMain] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  23-02-11 00:00:50[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  23-02-11 00:00:50[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  23-02-11 00:00:50[restartedMain] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+INFO  23-02-11 00:00:51[restartedMain] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  23-02-11 00:00:51[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  23-02-11 00:00:51[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  23-02-11 00:00:52[restartedMain] [DefaultSecurityFilterChain:55] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@69da351c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53b8ae15, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d7040d4, org.springframework.security.web.header.HeaderWriterFilter@8f2a972, org.springframework.security.web.authentication.logout.LogoutFilter@72dbabcf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ecb6b67, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@362f22af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f747c43, org.springframework.security.web.session.SessionManagementFilter@13a9eaad, org.springframework.security.web.access.ExceptionTranslationFilter@5b7e9a77]
+INFO  23-02-11 00:00:53[restartedMain] [OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
+INFO  23-02-11 00:00:53[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-11 00:00:53[restartedMain] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-11 00:00:53[restartedMain] [SharingApplication:61] - Started SharingApplication in 7.673 seconds (JVM running for 10.093)
+INFO  23-02-11 00:01:17[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  23-02-11 00:01:17[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+INFO  23-02-11 00:01:17[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+INFO  23-02-11 00:01:27[restartedMain] [SharingApplication:55] - Starting SharingApplication using Java 11 on DESKTOP-OLLBE1M with PID 7940 (D:\spring\sharing\out\production\classes started by alexg in D:\spring\sharing)
+INFO  23-02-11 00:01:27[restartedMain] [SharingApplication:631] - No active profile set, falling back to 1 default profile: "default"
+INFO  23-02-11 00:01:27[background-preinit] [Version:21] - HV000001: Hibernate Validator 6.2.5.Final
+INFO  23-02-11 00:01:27[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  23-02-11 00:01:27[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  23-02-11 00:01:28[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  23-02-11 00:01:28[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 74 ms. Found 3 JPA repository interfaces.
+INFO  23-02-11 00:01:29[restartedMain] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-11 00:01:29[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-11 00:01:29[restartedMain] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-11 00:01:29[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.71]
+INFO  23-02-11 00:01:29[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-11 00:01:29[restartedMain] [ServletWebServerApplicationContext:292] - Root WebApplicationContext: initialization completed in 2375 ms
+INFO  23-02-11 00:01:30[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  23-02-11 00:01:30[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 5.6.14.Final
+INFO  23-02-11 00:01:30[restartedMain] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  23-02-11 00:01:30[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  23-02-11 00:01:30[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  23-02-11 00:01:30[restartedMain] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+INFO  23-02-11 00:01:31[restartedMain] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  23-02-11 00:01:31[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  23-02-11 00:01:31[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  23-02-11 00:01:33[restartedMain] [DefaultSecurityFilterChain:55] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4e640004, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61db4774, org.springframework.security.web.context.SecurityContextPersistenceFilter@4f14fb12, org.springframework.security.web.header.HeaderWriterFilter@6c50f7c1, org.springframework.security.web.authentication.logout.LogoutFilter@72118668, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53b2351d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ca0b08b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5bb48684, org.springframework.security.web.session.SessionManagementFilter@18c81974, org.springframework.security.web.access.ExceptionTranslationFilter@5a48b753]
+INFO  23-02-11 00:01:33[restartedMain] [OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
+INFO  23-02-11 00:01:33[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-11 00:01:33[restartedMain] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-11 00:01:33[restartedMain] [SharingApplication:61] - Started SharingApplication in 7.151 seconds (JVM running for 9.009)
+INFO  23-02-11 00:02:06[http-nio-8080-exec-1] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-11 00:02:06[http-nio-8080-exec-1] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-11 00:02:06[http-nio-8080-exec-1] [DispatcherServlet:547] - Completed initialization in 3 ms
+INFO  23-02-11 00:02:17[http-nio-8080-exec-3] [BoardController:38] - 요청 DTO 값 확인 : PostBoardReq(title=첫 게시물, content=게시물입니다 1, startDate=20220122, endDate=20230205, price=10000, fileList=[org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@321a97b6, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@455a2209, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@67623d3, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@1370303d, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@7531a2c2])
+INFO  23-02-11 00:02:23[http-nio-8080-exec-5] [BoardServiceImpl:86] - 유저 nickname : alexgim1
+INFO  23-02-11 00:02:42[http-nio-8080-exec-10] [BoardServiceImpl:86] - 유저 nickname : alexgim1
+INFO  23-02-11 00:02:51[http-nio-8080-exec-1] [BoardServiceImpl:86] - 유저 nickname : alexgim1
+INFO  23-02-11 00:03:22[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  23-02-11 00:03:22[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+INFO  23-02-11 00:03:22[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+INFO  23-02-11 01:38:48[restartedMain] [SharingApplication:55] - Starting SharingApplication using Java 11 on DESKTOP-OLLBE1M with PID 11168 (D:\spring\sharing\out\production\classes started by alexg in D:\spring\sharing)
+INFO  23-02-11 01:38:48[restartedMain] [SharingApplication:631] - No active profile set, falling back to 1 default profile: "default"
+INFO  23-02-11 01:38:48[background-preinit] [Version:21] - HV000001: Hibernate Validator 6.2.5.Final
+INFO  23-02-11 01:38:48[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  23-02-11 01:38:48[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  23-02-11 01:38:49[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  23-02-11 01:38:49[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 99 ms. Found 3 JPA repository interfaces.
+INFO  23-02-11 01:38:50[restartedMain] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-11 01:38:50[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-11 01:38:50[restartedMain] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-11 01:38:50[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.71]
+INFO  23-02-11 01:38:50[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-11 01:38:50[restartedMain] [ServletWebServerApplicationContext:292] - Root WebApplicationContext: initialization completed in 2440 ms
+INFO  23-02-11 01:38:51[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  23-02-11 01:38:51[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 5.6.14.Final
+INFO  23-02-11 01:38:51[restartedMain] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  23-02-11 01:38:51[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  23-02-11 01:38:51[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  23-02-11 01:38:51[restartedMain] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+WARN  23-02-11 01:38:52[restartedMain] [ExceptionHandlerLoggedImpl:27] - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table comment 
+       drop 
+       foreign key FKlij9oor1nav89jeat35s6kbp1" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table comment 
+       drop 
+       foreign key FKlij9oor1nav89jeat35s6kbp1" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:387)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:371)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:341)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:235)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:156)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:128)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:157)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.alexgim.sharing.SharingApplication.main(SharingApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'sharing.comment' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 40 common frames omitted
+WARN  23-02-11 01:38:52[restartedMain] [ExceptionHandlerLoggedImpl:27] - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table comment 
+       drop 
+       foreign key FKdpfvmxdjigt43i2ckariyt9yg" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table comment 
+       drop 
+       foreign key FKdpfvmxdjigt43i2ckariyt9yg" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:387)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:371)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:341)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:235)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:156)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:128)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:157)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.alexgim.sharing.SharingApplication.main(SharingApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'sharing.comment' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 40 common frames omitted
+INFO  23-02-11 01:38:53[restartedMain] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  23-02-11 01:38:53[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  23-02-11 01:38:53[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+WARN  23-02-11 01:38:54[restartedMain] [AnnotationConfigServletWebServerApplicationContext:591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commentServiceImpl' defined in file [D:\spring\sharing\out\production\classes\com\alexgim\sharing\service\comment\CommentServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.alexgim.sharing.domain.comment.CommentRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+INFO  23-02-11 01:38:54[restartedMain] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  23-02-11 01:38:54[restartedMain] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+INFO  23-02-11 01:38:54[restartedMain] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+INFO  23-02-11 01:38:54[restartedMain] [StandardService:173] - Stopping service [Tomcat]
+INFO  23-02-11 01:38:54[restartedMain] [ConditionEvaluationReportLoggingListener:136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ERROR 23-02-11 01:38:54[restartedMain] [LoggingFailureAnalysisReporter:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.alexgim.sharing.service.comment.CommentServiceImpl required a bean of type 'com.alexgim.sharing.domain.comment.CommentRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.alexgim.sharing.domain.comment.CommentRepository' in your configuration.
+
+INFO  23-02-11 01:40:27[restartedMain] [SharingApplication:55] - Starting SharingApplication using Java 11 on DESKTOP-OLLBE1M with PID 12000 (D:\spring\sharing\out\production\classes started by alexg in D:\spring\sharing)
+INFO  23-02-11 01:40:27[background-preinit] [Version:21] - HV000001: Hibernate Validator 6.2.5.Final
+INFO  23-02-11 01:40:27[restartedMain] [SharingApplication:631] - No active profile set, falling back to 1 default profile: "default"
+INFO  23-02-11 01:40:27[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  23-02-11 01:40:27[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  23-02-11 01:40:29[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  23-02-11 01:40:29[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 77 ms. Found 4 JPA repository interfaces.
+INFO  23-02-11 01:40:30[restartedMain] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-11 01:40:30[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-11 01:40:30[restartedMain] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-11 01:40:30[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.71]
+INFO  23-02-11 01:40:30[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-11 01:40:30[restartedMain] [ServletWebServerApplicationContext:292] - Root WebApplicationContext: initialization completed in 2322 ms
+INFO  23-02-11 01:40:30[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  23-02-11 01:40:30[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 5.6.14.Final
+INFO  23-02-11 01:40:30[restartedMain] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  23-02-11 01:40:30[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  23-02-11 01:40:31[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  23-02-11 01:40:31[restartedMain] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+INFO  23-02-11 01:40:32[restartedMain] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  23-02-11 01:40:32[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  23-02-11 01:40:32[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  23-02-11 01:40:34[restartedMain] [DefaultSecurityFilterChain:55] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@324cb23d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f409527, org.springframework.security.web.context.SecurityContextPersistenceFilter@24f6e9b2, org.springframework.security.web.header.HeaderWriterFilter@77a16c98, org.springframework.security.web.authentication.logout.LogoutFilter@412a7c60, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29fcb40b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7792354a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22d75c3b, org.springframework.security.web.session.SessionManagementFilter@559fbadf, org.springframework.security.web.access.ExceptionTranslationFilter@43297410]
+INFO  23-02-11 01:40:34[restartedMain] [OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
+INFO  23-02-11 01:40:34[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-11 01:40:34[restartedMain] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-11 01:40:34[restartedMain] [SharingApplication:61] - Started SharingApplication in 7.859 seconds (JVM running for 9.698)
+INFO  23-02-11 01:40:47[http-nio-8080-exec-1] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-11 01:40:47[http-nio-8080-exec-1] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-11 01:40:47[http-nio-8080-exec-1] [DispatcherServlet:547] - Completed initialization in 3 ms
+WARN  23-02-11 01:41:26[http-nio-8080-exec-3] [ExceptionHandlerExceptionResolver:208] - Resolved [com.alexgim.sharing.handler.ex.BaseException]
+INFO  23-02-11 01:43:09[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  23-02-11 01:43:09[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+INFO  23-02-11 01:43:09[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+INFO  23-02-11 01:43:19[background-preinit] [Version:21] - HV000001: Hibernate Validator 6.2.5.Final
+INFO  23-02-11 01:43:19[restartedMain] [SharingApplication:55] - Starting SharingApplication using Java 11 on DESKTOP-OLLBE1M with PID 7912 (D:\spring\sharing\out\production\classes started by alexg in D:\spring\sharing)
+INFO  23-02-11 01:43:19[restartedMain] [SharingApplication:631] - No active profile set, falling back to 1 default profile: "default"
+INFO  23-02-11 01:43:19[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  23-02-11 01:43:19[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  23-02-11 01:43:20[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  23-02-11 01:43:21[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 96 ms. Found 4 JPA repository interfaces.
+INFO  23-02-11 01:43:21[restartedMain] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-11 01:43:21[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-11 01:43:21[restartedMain] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-11 01:43:21[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.71]
+INFO  23-02-11 01:43:22[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-11 01:43:22[restartedMain] [ServletWebServerApplicationContext:292] - Root WebApplicationContext: initialization completed in 2563 ms
+INFO  23-02-11 01:43:22[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  23-02-11 01:43:22[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 5.6.14.Final
+INFO  23-02-11 01:43:22[restartedMain] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  23-02-11 01:43:22[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  23-02-11 01:43:22[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  23-02-11 01:43:22[restartedMain] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+INFO  23-02-11 01:43:24[restartedMain] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  23-02-11 01:43:24[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  23-02-11 01:43:24[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  23-02-11 01:43:25[restartedMain] [DefaultSecurityFilterChain:55] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7dfad700, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@63e866e8, org.springframework.security.web.context.SecurityContextPersistenceFilter@12eea51b, org.springframework.security.web.header.HeaderWriterFilter@72799ce2, org.springframework.security.web.authentication.logout.LogoutFilter@1339747c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2df467e2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29353b6d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1035a8e9, org.springframework.security.web.session.SessionManagementFilter@3fdc4a81, org.springframework.security.web.access.ExceptionTranslationFilter@49ea7445]
+INFO  23-02-11 01:43:26[restartedMain] [OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
+INFO  23-02-11 01:43:26[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-11 01:43:26[restartedMain] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-11 01:43:26[restartedMain] [SharingApplication:61] - Started SharingApplication in 7.814 seconds (JVM running for 9.738)
+INFO  23-02-11 01:43:32[http-nio-8080-exec-2] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-11 01:43:32[http-nio-8080-exec-2] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-11 01:43:32[http-nio-8080-exec-2] [DispatcherServlet:547] - Completed initialization in 3 ms
+WARN  23-02-11 01:43:37[http-nio-8080-exec-3] [ExceptionHandlerExceptionResolver:208] - Resolved [com.alexgim.sharing.handler.ex.BaseException]
+INFO  23-02-11 01:43:43[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  23-02-11 01:43:43[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+INFO  23-02-11 01:43:43[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+INFO  23-02-11 01:43:53[restartedMain] [SharingApplication:55] - Starting SharingApplication using Java 11 on DESKTOP-OLLBE1M with PID 2556 (D:\spring\sharing\out\production\classes started by alexg in D:\spring\sharing)
+INFO  23-02-11 01:43:53[background-preinit] [Version:21] - HV000001: Hibernate Validator 6.2.5.Final
+INFO  23-02-11 01:43:53[restartedMain] [SharingApplication:631] - No active profile set, falling back to 1 default profile: "default"
+INFO  23-02-11 01:43:53[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  23-02-11 01:43:53[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  23-02-11 01:43:55[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  23-02-11 01:43:55[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 72 ms. Found 4 JPA repository interfaces.
+INFO  23-02-11 01:43:55[restartedMain] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-11 01:43:55[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-11 01:43:55[restartedMain] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-11 01:43:55[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.71]
+INFO  23-02-11 01:43:56[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-11 01:43:56[restartedMain] [ServletWebServerApplicationContext:292] - Root WebApplicationContext: initialization completed in 2280 ms
+INFO  23-02-11 01:43:56[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  23-02-11 01:43:56[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 5.6.14.Final
+INFO  23-02-11 01:43:56[restartedMain] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  23-02-11 01:43:56[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  23-02-11 01:43:56[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  23-02-11 01:43:56[restartedMain] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+INFO  23-02-11 01:43:58[restartedMain] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  23-02-11 01:43:58[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  23-02-11 01:43:58[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  23-02-11 01:43:59[restartedMain] [DefaultSecurityFilterChain:55] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3be54eef, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69a7d572, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d94ef7f, org.springframework.security.web.header.HeaderWriterFilter@131c3a26, org.springframework.security.web.authentication.logout.LogoutFilter@485a5dfc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2054ded3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a7e4ac5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19e3b555, org.springframework.security.web.session.SessionManagementFilter@1eacbe27, org.springframework.security.web.access.ExceptionTranslationFilter@36fcb424]
+INFO  23-02-11 01:43:59[restartedMain] [OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
+INFO  23-02-11 01:44:00[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-11 01:44:00[restartedMain] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-11 01:44:00[restartedMain] [SharingApplication:61] - Started SharingApplication in 7.282 seconds (JVM running for 9.1)
+INFO  23-02-11 01:44:05[http-nio-8080-exec-2] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-11 01:44:05[http-nio-8080-exec-2] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-11 01:44:05[http-nio-8080-exec-2] [DispatcherServlet:547] - Completed initialization in 3 ms
+WARN  23-02-11 01:44:06[http-nio-8080-exec-2] [ExceptionHandlerExceptionResolver:208] - Resolved [com.alexgim.sharing.handler.ex.BaseException]
+INFO  23-02-11 02:10:51[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  23-02-11 02:10:51[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+INFO  23-02-11 02:10:51[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+INFO  23-02-11 02:11:06[restartedMain] [SharingApplication:55] - Starting SharingApplication using Java 11 on DESKTOP-OLLBE1M with PID 13236 (D:\spring\sharing\out\production\classes started by alexg in D:\spring\sharing)
+INFO  23-02-11 02:11:06[background-preinit] [Version:21] - HV000001: Hibernate Validator 6.2.5.Final
+INFO  23-02-11 02:11:06[restartedMain] [SharingApplication:631] - No active profile set, falling back to 1 default profile: "default"
+INFO  23-02-11 02:11:06[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+INFO  23-02-11 02:11:06[restartedMain] [DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+INFO  23-02-11 02:11:07[restartedMain] [RepositoryConfigurationDelegate:132] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+INFO  23-02-11 02:11:08[restartedMain] [RepositoryConfigurationDelegate:201] - Finished Spring Data repository scanning in 81 ms. Found 4 JPA repository interfaces.
+INFO  23-02-11 02:11:08[restartedMain] [TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+INFO  23-02-11 02:11:08[restartedMain] [Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+INFO  23-02-11 02:11:08[restartedMain] [StandardService:173] - Starting service [Tomcat]
+INFO  23-02-11 02:11:08[restartedMain] [StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.71]
+INFO  23-02-11 02:11:09[restartedMain] [[/]:173] - Initializing Spring embedded WebApplicationContext
+INFO  23-02-11 02:11:09[restartedMain] [ServletWebServerApplicationContext:292] - Root WebApplicationContext: initialization completed in 2378 ms
+INFO  23-02-11 02:11:09[restartedMain] [LogHelper:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+INFO  23-02-11 02:11:09[restartedMain] [Version:44] - HHH000412: Hibernate ORM core version 5.6.14.Final
+INFO  23-02-11 02:11:09[restartedMain] [Version:56] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+INFO  23-02-11 02:11:09[restartedMain] [HikariDataSource:110] - HikariPool-1 - Starting...
+INFO  23-02-11 02:11:09[restartedMain] [HikariDataSource:123] - HikariPool-1 - Start completed.
+INFO  23-02-11 02:11:09[restartedMain] [Dialect:175] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+WARN  23-02-11 02:11:10[restartedMain] [ExceptionHandlerLoggedImpl:27] - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table comment 
+       drop 
+       foreign key FK8kcum44fvpupyw6f5baccx25c" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table comment 
+       drop 
+       foreign key FK8kcum44fvpupyw6f5baccx25c" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:387)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:371)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:341)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:235)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:156)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:128)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:157)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.alexgim.sharing.SharingApplication.main(SharingApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP 'FK8kcum44fvpupyw6f5baccx25c'; check that column/key exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 40 common frames omitted
+INFO  23-02-11 02:11:11[restartedMain] [JtaPlatformInitiator:52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  23-02-11 02:11:11[restartedMain] [LocalContainerEntityManagerFactoryBean:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+WARN  23-02-11 02:11:11[restartedMain] [JpaBaseConfiguration$JpaWebConfiguration:219] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+INFO  23-02-11 02:11:12[restartedMain] [DefaultSecurityFilterChain:55] - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a5ba433, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f51392, org.springframework.security.web.context.SecurityContextPersistenceFilter@79d59230, org.springframework.security.web.header.HeaderWriterFilter@405bcb87, org.springframework.security.web.authentication.logout.LogoutFilter@534376a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5affebf2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77eb26fe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7408121f, org.springframework.security.web.session.SessionManagementFilter@761e8b7e, org.springframework.security.web.access.ExceptionTranslationFilter@563c2a93]
+INFO  23-02-11 02:11:13[restartedMain] [OptionalLiveReloadServer:59] - LiveReload server is running on port 35729
+INFO  23-02-11 02:11:13[restartedMain] [Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+INFO  23-02-11 02:11:13[restartedMain] [TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+INFO  23-02-11 02:11:13[restartedMain] [SharingApplication:61] - Started SharingApplication in 7.542 seconds (JVM running for 9.416)
+INFO  23-02-11 02:11:20[http-nio-8080-exec-2] [[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+INFO  23-02-11 02:11:20[http-nio-8080-exec-2] [DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+INFO  23-02-11 02:11:20[http-nio-8080-exec-2] [DispatcherServlet:547] - Completed initialization in 2 ms
+INFO  23-02-11 02:12:11[http-nio-8080-exec-4] [BoardController:38] - 요청 DTO 값 확인 : PostBoardReq(title=첫 게시물, content=게시물입니다 1, startDate=20220122, endDate=20230205, price=10000, fileList=[org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@538e37a1, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@222cea34, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@c32aba3, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@18b78374, org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@3aa69cfc])
+WARN  23-02-11 02:13:45[http-nio-8080-exec-7] [SqlExceptionHelper:137] - SQL Error: 1048, SQLState: 23000
+ERROR 23-02-11 02:13:45[http-nio-8080-exec-7] [SqlExceptionHelper:142] - Column 'user_id' cannot be null
+ERROR 23-02-11 02:13:45[http-nio-8080-exec-7] [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Column 'user_id' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.dialect.identity.GetGeneratedKeysDelegate.executeAndExtract(GetGeneratedKeysDelegate.java:58)
+	at org.hibernate.id.insert.AbstractReturningDelegate.performInsert(AbstractReturningDelegate.java:43)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3279)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3914)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:84)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:329)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:286)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:192)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:122)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:756)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:742)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy135.persist(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy135.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:666)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:530)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:286)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:640)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:81)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy149.save(Unknown Source)
+	at com.alexgim.sharing.service.comment.CommentServiceImpl.writeComment(CommentServiceImpl.java:29)
+	at com.alexgim.sharing.service.comment.CommentServiceImpl$$FastClassBySpringCGLIB$$1137a4fe.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.alexgim.sharing.service.comment.CommentServiceImpl$$EnhancerBySpringCGLIB$$d607bff0.writeComment(<generated>)
+	at com.alexgim.sharing.web.CommentController.postComment(CommentController.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:337)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+INFO  23-02-11 02:14:36[SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean:651] - Closing JPA EntityManagerFactory for persistence unit 'default'
+INFO  23-02-11 02:14:36[SpringApplicationShutdownHook] [HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+INFO  23-02-11 02:14:36[SpringApplicationShutdownHook] [HikariDataSource:352] - HikariPool-1 - Shutdown completed.

@@ -18,7 +18,7 @@ import java.util.Date;
 public class JwtService {
 
     // JWT 생성
-    public String createJwt(int userId) {
+    public String createJwt(Long userId) {
         Date now = new Date();
         return Jwts.builder()
                 .setHeaderParam("type", "jwt")
@@ -36,7 +36,7 @@ public class JwtService {
     }
 
     // JWT에서 userId 추출
-    public int getUserId() throws BaseException {
+    public Long getUserId() throws BaseException {
         String accessToken = getJwt();
         if(accessToken == null || accessToken.length() == 0) throw new BaseException(BaseResponseStatus.EMPTY_JWT);
 
@@ -49,6 +49,6 @@ public class JwtService {
             throw new BaseException(BaseResponseStatus.INVALID_JWT);
         }
 
-        return claims.getBody().get("userId", Integer.class);
+        return claims.getBody().get("userId", Long.class);
     }
 }

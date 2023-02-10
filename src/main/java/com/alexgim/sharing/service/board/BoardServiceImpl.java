@@ -9,6 +9,7 @@ import com.alexgim.sharing.domain.user.UserRepository;
 import com.alexgim.sharing.handler.ex.BaseException;
 import com.alexgim.sharing.handler.ex.BaseResponseStatus;
 import com.alexgim.sharing.util.S3Component;
+import com.alexgim.sharing.web.dto.board.BoardDto;
 import com.alexgim.sharing.web.dto.board.GetBoardResp;
 import com.alexgim.sharing.web.dto.board.PostBoardReq;
 import lombok.RequiredArgsConstructor;
@@ -66,6 +67,7 @@ public class BoardServiceImpl implements BoardService{
                 imageList.add(imageEntity);
                 boardEntity.setImageList(imageList);
                 boardRepository.save(boardEntity);
+                userEntity.getBoardList().add(boardEntity);
             } catch (Exception e) {
                 throw new BaseException(BaseResponseStatus.DB_CONNECTION_ERROR);
             }
@@ -92,5 +94,20 @@ public class BoardServiceImpl implements BoardService{
                     .build());
         }
         return list;
+    }
+
+    @Transactional
+    @Override
+    public BoardDto readOne(Long boardId) {
+        Board board = null;
+        try {
+            board = boardRepository.findById(boardId).get();
+        } catch (RuntimeException e){
+            throw new BaseException(BaseResponseStatus.DB_CONNECTION_ERROR);
+        }
+        // 조회 시, 조회수 증가
+        board.setCount(board.getCount()+1);
+        BoardDto boardDto = board.toDto();
+        return boardDto;
     }
 }

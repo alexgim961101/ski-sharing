@@ -5,9 +5,7 @@ import com.alexgim.sharing.handler.ex.BaseException;
 import com.alexgim.sharing.handler.ex.BaseResponseStatus;
 import com.alexgim.sharing.service.user.UserService;
 import com.alexgim.sharing.web.dto.BaseResponseDto;
-import com.alexgim.sharing.web.dto.user.UserDto;
-import com.alexgim.sharing.web.dto.user.UserLoginReqDto;
-import com.alexgim.sharing.web.dto.user.UserUpdateProfileDto;
+import com.alexgim.sharing.web.dto.user.*;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import lombok.RequiredArgsConstructor;
@@ -38,11 +36,22 @@ public class UserController {
      * */
     @ApiOperation(value = "회원가입", notes = "유저 정보를 받아서 DB에 저장하는 API")
     @PostMapping
-    public BaseResponseDto signup(@Valid UserLoginReqDto userLoginReqDto, BindingResult bindingResult) {
+    public BaseResponseDto signup(@Valid UserSignUpReqDto userSignUpReqDto, BindingResult bindingResult) {
         checkValidation(bindingResult);
 
-        User userEntity = userService.enroll(userLoginReqDto);
+        User userEntity = userService.enroll(userSignUpReqDto);
         return new BaseResponseDto(userEntity);
+    }
+
+    /**
+     * 로그인 API
+     * */
+    @PostMapping("/login")
+    public BaseResponseDto login(@Valid @RequestBody PostLoginReq postLoginReq, BindingResult bindingResult) {
+        checkValidation(bindingResult);
+
+        PostLoginResp postLoginResp = userService.login(postLoginReq);
+        return new BaseResponseDto(postLoginResp);
     }
 
     /**

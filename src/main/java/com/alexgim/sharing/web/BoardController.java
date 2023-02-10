@@ -5,9 +5,11 @@ import com.alexgim.sharing.handler.ex.BaseException;
 import com.alexgim.sharing.handler.ex.BaseResponseStatus;
 import com.alexgim.sharing.service.board.BoardService;
 import com.alexgim.sharing.web.dto.BaseResponseDto;
+import com.alexgim.sharing.web.dto.board.BoardDto;
 import com.alexgim.sharing.web.dto.board.GetBoardResp;
 import com.alexgim.sharing.web.dto.board.PostBoardReq;
 import io.swagger.annotations.ApiOperation;
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -43,6 +45,15 @@ public class BoardController {
     public BaseResponseDto readTen(Pageable pageable) {
         List<GetBoardResp> list = boardService.readAll(pageable);
         return new BaseResponseDto(list);
+    }
+
+    @ApiOperation(value = "특정 게시판 출력 API", notes = "특정 게시판의 내용 확인")
+    @GetMapping("/{boardId}")
+    public BaseResponseDto readOne(@PathVariable Long boardId){
+        if(boardId < 1) throw new BaseException(BaseResponseStatus.INVALID_REQUEST);
+
+        BoardDto boardDto = boardService.readOne(boardId);
+        return new BaseResponseDto(boardDto);
     }
 
     public void checkValidation(BindingResult bindingResult) {
