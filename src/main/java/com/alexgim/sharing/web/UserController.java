@@ -5,11 +5,13 @@ import com.alexgim.sharing.handler.ex.BaseException;
 import com.alexgim.sharing.handler.ex.BaseResponseStatus;
 import com.alexgim.sharing.service.user.UserService;
 import com.alexgim.sharing.web.dto.BaseResponseDto;
+import com.alexgim.sharing.web.dto.user.UserDto;
 import com.alexgim.sharing.web.dto.user.UserLoginReqDto;
 import com.alexgim.sharing.web.dto.user.UserUpdateProfileDto;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Pageable;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.validation.annotation.Validated;
@@ -19,6 +21,7 @@ import javax.validation.Valid;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Size;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -70,6 +73,15 @@ public class UserController {
         return new BaseResponseDto(userEntity);
     }
 
+    /**
+     * 유저 전체 조회 (1 page : 5 User)
+     * Pageable 사용
+     * */
+    @GetMapping()
+    public BaseResponseDto readAllUser(Pageable pageable) {
+        List<UserDto> list = userService.readAll(pageable);
+        return new BaseResponseDto(list);
+    }
 
     public void checkValidation(BindingResult bindingResult) {
         if(bindingResult.hasErrors()) {

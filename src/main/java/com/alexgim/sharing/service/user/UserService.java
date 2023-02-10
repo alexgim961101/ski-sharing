@@ -1,8 +1,12 @@
 package com.alexgim.sharing.service.user;
 
 import com.alexgim.sharing.domain.user.User;
+import com.alexgim.sharing.web.dto.user.UserDto;
 import com.alexgim.sharing.web.dto.user.UserLoginReqDto;
 import com.alexgim.sharing.web.dto.user.UserUpdateProfileDto;
+import org.springframework.data.domain.Pageable;
+
+import java.util.List;
 
 public interface UserService {
     /**
@@ -25,4 +29,6 @@ public interface UserService {
      * 자기소개 변경 로직
      * */
     User updateContent(Long userId, String content);
+
+    List<UserDto> readAll(Pageable pageable);
 }

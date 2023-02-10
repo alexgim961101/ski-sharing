@@ -5,12 +5,18 @@ import com.alexgim.sharing.domain.user.UserRepository;
 import com.alexgim.sharing.handler.ex.BaseException;
 import com.alexgim.sharing.handler.ex.BaseResponseStatus;
 import com.alexgim.sharing.util.S3Component;
+import com.alexgim.sharing.web.dto.user.UserDto;
 import com.alexgim.sharing.web.dto.user.UserLoginReqDto;
 import com.alexgim.sharing.web.dto.user.UserUpdateProfileDto;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -60,5 +66,13 @@ public class UserServiceImpl implements UserService{
         } catch (Exception e) {
             throw new BaseException(BaseResponseStatus.DB_CONNECTION_ERROR);
         }
+    }
+
+    @Override
+    public List<UserDto> readAll(Pageable pageable) {
+        Page<User> users = userRepository.pageUserAll(pageable);
+        ArrayList<UserDto> list = new ArrayList<>();
+        users.get().forEach(obj -> list.add(obj.toDto()));
+        return list;
     }
 }
